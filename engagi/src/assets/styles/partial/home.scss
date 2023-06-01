@@ -1,0 +1,135 @@
+.eng-maindiv {
+    height: 100vh;
+    background-color: $background-color;
+}
+
+.eng-detailsdiv {
+    padding-top: 110px;
+    height: 77vh;
+
+
+    @media screen and (max-height: 600px) {
+        height: 70vh !important;
+    }
+
+    @media screen and (max-height:500px) {
+        height: 60vh !important;
+    }
+}
+
+.eng-staffmain {
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: $white-color !important;
+    height: 100%;
+    overflow-y: scroll;
+
+    @media screen and (max-height: 420px) {
+        height: 70vh;
+    }
+
+    @media screen and (max-height:400px) {
+        height: 65vh;
+    }
+}
+
+.eng-titlecontainer {
+    padding-top: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.eng-profilename {
+    color: $header-color;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.eng-eventcard {
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: $font-family;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.eng-detailscard {
+    display: flex;
+}
+
+.eng-eventimage {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.eng-image {
+    border-radius: 10px;
+}
+
+.eng-eventdescription {
+    width: 70%;
+}
+
+.eng-viewmoreButton {
+    display: flex;
+}
+
+.eng-ptitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: $header-color;
+    font-family: $font-family;
+
+    &_all {
+        font-size: 15px !important;
+    }
+}
+
+.eng-carddiv {
+    display: flex;
+}
+
+.eng-cardleft {
+    width: 50%;
+}
+
+.eng-searchbarcontainer {
+    display: flex;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.eng-searchbarLeft {
+    width: 80%;
+    padding-left: 20px;
+}
+
+.eng-searchbarRight {
+    width: 20%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.eng-status {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+    color: $status-color;
+    font-weight: 700;
+}
+
+.eng-detailtitle {
+    font-size: 16px;
+    color: $header-color;
+    font-weight: 700;
+}

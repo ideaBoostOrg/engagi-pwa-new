@@ -1,0 +1,165 @@
+.eng-splashscreencontainer {
+    padding: 5px;
+    height: 95vh;
+}
+
+.eng-splashimagecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+
+    &-signup {
+        height: 45vh !important;
+    }
+}
+
+.eng-splashimage {
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+}
+
+.eng-splashgrid {
+    overflow: scroll;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    &-signup {
+        padding-top: 0px !important;
+        padding-bottom: 5px !important;
+    }
+}
+
+.eng-title {
+    font-size: 50px;
+    text-align: center;
+    font-family: $font-family;
+    font-weight: 700;
+    color: $header-color;
+
+    @media screen and (max-width: 500px) {
+        font-size: 30px !important;
+    }
+}
+
+.eng-button {
+    background-color: $header-color !important;
+    border: none !important;
+    outline: none !important;
+    font-family: $font-family !important;
+    padding: 12px 100px !important;
+    font-size: 18px !important;
+    color: $white-color !important;
+    font-weight: 700 !important;
+    border-radius: 30px !important;
+
+    &:hover {
+        background-color: $white-color !important;
+        border: 1px solid $header-color !important;
+        color: $header-color !important;
+        border-radius: 30px !important;
+    }
+
+    &::after {
+        border-radius: 30px !important;
+        background-color: $white-color !important;
+    }
+
+    &-link {
+        background-color: $white-color !important;
+        color: $header-color !important;
+        border: none !important;
+        outline: none !important;
+        padding: 15px !important;
+        border-radius: 10px !important;
+        font-family: $font-family;
+        font-weight: 800;
+        font-size: 15px;
+
+        &:hover {
+            font-weight: 700;
+            background-color: $white-color !important;
+            border-radius: 10px !important;
+        }
+    }
+
+    &_primary {
+        padding: 10px 30px !important;
+        border-radius: 10px !important;
+    }
+
+    &_start {
+        background-color: $white-color !important;
+        color: $header-color !important;
+
+        &:hover {
+            font-weight: 700;
+            background-color: $white-color !important;
+        }
+    }
+
+    &_view {
+        background-color: $white-color !important;
+        border: 1px solid $header-color !important;
+        color: $header-color !important;
+        border-radius: 30px !important;
+
+        &:hover {
+            background-color: $header-color !important;
+            color: $white-color !important;
+            border-radius: 30px !important; 
+        }
+    }
+
+    &-profile {
+        padding: 12px 20px !important;
+        border-radius: 10px !important;
+    }
+}
+
+.eng-loginbuttoncontainer {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eng-linktext {
+    font-family: $font-family;
+    font-size: 15px;
+}
+
+.eng-startdiv {
+    background-color: $header-color;
+    height: 100vh;
+}
+
+.eng-logodiv {
+    height: 60vh;
+    background-color: $header-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eng-buttoncontainer {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.eng-authorization {
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $font-family;
+    position: fixed;
+    bottom: calc(20px);
+    right: 0;
+    left: 0;
+}

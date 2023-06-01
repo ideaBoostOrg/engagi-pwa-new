@@ -1,0 +1,30 @@
+.eng-form-input {
+    width: 95%;
+    color: $header-color !important;
+}
+
+.eng-form-input .adm-input-element {
+    font-family: $font-family;
+    width: 100% !important;
+    font-size: 16px;
+    border: 1px solid $status-color;
+    border-radius: 7px;
+    padding: 4px;
+
+    &:hover {
+        border: 1px solid $header-color;
+    }
+}
+
+.eng-select {
+    font-size: 15px !important;
+    font-family: $font-family !important;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .ant-select-dropdown .ant-select-item {
+        font-size: $font-family !important;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}
