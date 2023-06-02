@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 50vh;
 
     &-signup {
         height: 45vh !important;
@@ -28,6 +28,7 @@
     &-signup {
         padding-top: 0px !important;
         padding-bottom: 5px !important;
+        padding-left: 15px;
     }
 }
 
@@ -43,12 +44,23 @@
     }
 }
 
+.ant-btn {
+    height: 55px;
+}
+
+.eng-buttoncol {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 .eng-button {
     background-color: $header-color !important;
     border: none !important;
     outline: none !important;
     font-family: $font-family !important;
-    padding: 12px 100px !important;
+    padding: 15px 100px !important;
     font-size: 18px !important;
     color: $white-color !important;
     font-weight: 700 !important;
