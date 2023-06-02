@@ -1,7 +1,7 @@
-import { Row } from "antd";
-import React from "react";
+import { Row } from 'antd';
+import React from 'react';
 
-const Navbaar = () => {
+const Navbar = () => {
     return (
         <Row>
             Navbaar
@@ -9,4 +9,4 @@ const Navbaar = () => {
     );
 };
 
-export default Navbaar;
+export default Navbar;

@@ -1,13 +1,12 @@
 import { Row } from 'antd';
 import React from 'react';
-import Header from '../header/header';
 
-const Home = () => {
+const EventCardView = () => {
     return (
         <Row>
-            <Header />
+            event card view
         </Row>
     );
 };
 
-export default Home;
+export default EventCardView;

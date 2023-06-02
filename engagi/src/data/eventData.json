@@ -1,0 +1,44 @@
+{
+    "eventData": [
+      {
+        "name": "Event 1",
+        "id": "1",
+        "event_name": "ICT introduction session",
+        "host_name": "John Doe",
+        "venue": "Music Hall",
+        "date": "06/15/2023",
+        "time": "7:30 PM",
+        "state": "PREVIOUS"
+      },
+      {
+        "name": "Event 2",
+        "id": "2",
+        "event_name": "ICT introduction session",
+        "host_name": "Jane Smith",
+        "venue": "Convention Center",
+        "date": "10/07/2023",
+        "time": "9:00 AM",
+        "state": "CURRENT"
+      },
+      {
+        "name": "Event 3",
+        "id": "3",
+        "event_name": "ICT introduction session",
+        "host_name": "Sam Johnson",
+        "venue": "Art Gallery",
+        "date": "08/25/2023",
+        "time": "2:00 PM",
+        "state": "NEXT"
+      },
+      {
+        "name": "Event 4",
+        "id": "4",
+        "event_name": "ICT introduction session",
+        "host_name": "John Doe",
+        "venue": "Music Hall",
+        "date": "06/15/2023",
+        "time": "7:30 PM",
+        "state": "LATER"
+      }
+    ]
+  }
