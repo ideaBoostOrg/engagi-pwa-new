@@ -8,6 +8,7 @@ import Home from './components/attendee/home/home';
 import Splash from './components/splash/splash';
 import Signup from './components/signup/signup';
 import Started from './components/started.tsx/started';
+import EventContainer from './components/attendee/home/components/eventContainer';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/start" element={<Splash />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/home" element={<Home />} />
+                <Route path="/events" element={<EventContainer />} />
                 <Route path="/notification" element={<Notifications />} />
                 <Route path="/qr" element={<Qrscan />} />
                 <Route path="/profile" element={<Profile />} />

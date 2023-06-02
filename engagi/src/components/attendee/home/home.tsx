@@ -22,27 +22,25 @@ const Home = () => {
             <Row>
                 <Header />
             </Row>
-            <Row>
-                <Col span={24} className="eng-detailsdiv">
-                    <Row className="eng-staffmain">
-                        <Col className="eng-titlecontainer" span={24}>
-                            <Row>
-                                <Col span={22}>
-                                    <span className="eng-profilename">Agenda</span>
-                                </Col>
-                                <Col span={2} className="eng-viewmoreButton">
-                                    <Button className="eng-button_view" onClick={handleView}>
-                                        View More
-                                    </Button>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col>
-                            <CardContainer eventDataArray={eventDataset} />
-                        </Col>
-                    </Row>
-                </Col>
-            </Row>
+            <div className="eng-detailsdiv">
+                <Row className="eng-staffmain">
+                    <Col className="eng-titlecontainer" span={24}>
+                        <Row>
+                            <Col span={22}>
+                                <span className="eng-profilename">Agenda</span>
+                            </Col>
+                            <Col span={2} className="eng-viewmoreButton">
+                                <Button className="eng-button_view" onClick={handleView}>
+                                    View More
+                                </Button>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col>
+                        <CardContainer eventDataArray={eventDataset} />
+                    </Col>
+                </Row>
+            </div>
             <Row>
                 <Navbar />
             </Row>
