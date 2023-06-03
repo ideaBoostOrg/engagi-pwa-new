@@ -10,7 +10,6 @@ import CardContainer from './components/cardContainer';
 const Home = () => {
     const navigate = useNavigate();
     const [eventDataset, setEventDataset] = useState<EventDataType[]>([]);
-    console.log(eventDataset);
     useEffect(() => {
         setEventDataset(eventData.eventData);
     }, []);

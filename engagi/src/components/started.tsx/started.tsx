@@ -9,7 +9,6 @@ const Started = () => {
         navigate('/start');
         window.location.reload();
     };
-    console.log(handleNaxt);
     return (
         <div className="eng-startdiv">
             <Row>

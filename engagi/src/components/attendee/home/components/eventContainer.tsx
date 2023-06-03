@@ -31,7 +31,6 @@ const EventContainer = () => {
         </Row>
     );
     const onSearch = (value: string) => {
-        console.log(value);
         const filteredDataset = allEvents.allevents.filter((eventData) => {
             return (
                 eventData.event_name.toLowerCase().includes(value.toLowerCase()) ||

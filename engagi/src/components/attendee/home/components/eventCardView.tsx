@@ -8,7 +8,6 @@ import GoBack from '../../../common/goBack';
 const EventCardView = () => {
     const location = useLocation();
     const dataArray = location.state.eventData;
-    console.log(dataArray);
     return (
         <div className="eng-maindiv">
             <Row>
