@@ -34,9 +34,9 @@ const EventContainer = () => {
         console.log(value);
         const filteredDataset = allEvents.allevents.filter((eventData) => {
             return (
-                eventData.eventName.toLowerCase().includes(value.toLowerCase()) ||
-                eventData.title.toLowerCase().includes(value.toLowerCase()) ||
-                eventData.eventHost.toLowerCase().includes(value.toLowerCase())
+                eventData.event_name.toLowerCase().includes(value.toLowerCase()) ||
+                eventData.name.toLowerCase().includes(value.toLowerCase()) ||
+                eventData.host_name.toLowerCase().includes(value.toLowerCase())
             );
         });
         setAllDataset(filteredDataset);
@@ -44,9 +44,9 @@ const EventContainer = () => {
     const handleSearch = (value: string) => {
         const filteredDataset = allEvents.allevents.filter((eventData) => {
             return (
-                eventData.eventName.toLowerCase().includes(value.toLowerCase()) ||
-                eventData.title.toLowerCase().includes(value.toLowerCase()) ||
-                eventData.eventHost.toLowerCase().includes(value.toLowerCase())
+                eventData.event_name.toLowerCase().includes(value.toLowerCase()) ||
+                eventData.name.toLowerCase().includes(value.toLowerCase()) ||
+                eventData.host_name.toLowerCase().includes(value.toLowerCase())
             );
         });
         setAllDataset(filteredDataset);
@@ -59,6 +59,9 @@ const EventContainer = () => {
     //         handleNextpage(selectedOptionValue);
     //     }
     // };
+    const handleView = (eventData: AllDataType) => {
+        navigate('/home/view', { state: { eventData } });
+    };
     const handleNextpage = (selectedOptionValue: string) => {
         console.log(selectedOptionValue);
         if (selectedOptionValue == '5/23/2023') {
@@ -109,7 +112,7 @@ const EventContainer = () => {
                     </Col>
                     <div>
                         {allDataset.map((eventData) => {
-                            return <Card className="eng-eventcard" key={eventData.id}>
+                            return <Card className="eng-eventcard" key={eventData.id} onClick={() => {handleView(eventData);}}>
                                 <Row className="eng-detailscard">
                                     <Col className="eng-eventimage" xs={7}>
                                         <div className="eng-image">
@@ -117,9 +120,9 @@ const EventContainer = () => {
                                         </div>
                                     </Col>
                                     <Col className="eng-eventdescription" xs={16}>
-                                        <Row><span className="eng-detailtitle">{eventData.eventName}</span></Row>
-                                        <Row><span className="eng-detailtitle">{eventData.title}</span></Row>
-                                        <Row><span>{eventData.eventHost}</span></Row>
+                                        <Row><span className="eng-detailtitle">{eventData.name}</span></Row>
+                                        <Row><span className="eng-detailtitle">{eventData.event_name}</span></Row>
+                                        <Row><span>{eventData.host_name}</span></Row>
                                         <Row><span>{eventData.venue}</span></Row>
                                         <Row className="eng-carddiv">
                                             <Row className="eng-cardleft"><span>{eventData.date}</span></Row>

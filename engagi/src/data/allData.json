@@ -2,9 +2,9 @@
     "allevents": [
       {
         "id": "1",
-        "eventName": "Event 6",
-        "title": "Javascript and features",
-        "eventHost": "Hana siara",
+        "name": "Event 6",
+        "event_name": "Javascript and features",
+        "host_name": "Hana siara",
         "venue": "Venue 1",
         "date": "5/20/2023",
         "time": "10:00 AM",
@@ -13,20 +13,21 @@
       },
       {
         "id": "2",
-        "eventName": "Event 7",
-        "title": "host your web application",
-        "eventHost": "Senarath kumara",
+        "name": "Event 7",
+        "event_name": "host your web app",
+        "host_name": "Senarath kumara",
         "venue": "Venue 2",
         "date": "2/06/2023",
         "time": "2:30 PM",
         "attendance": 20,
         "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
+
       {
         "id": "3",
-        "eventName": "Event 8",
-        "title": "AWS and it's features",
-        "eventHost": "Jay loadan",
+        "name": "Event 8",
+        "event_name": "AWS and it's features",
+        "host_name": "Jay loadan",
         "venue": "Venue 3",
         "date": "5/19/2023",
         "time": "6:00 PM",
@@ -35,9 +36,9 @@
       },
       {
         "id": "4",
-        "eventName": "Event 9",
-        "title": "introduction to AWS",
-        "eventHost": "jia khan",
+        "name": "Event 9",
+        "event_name": "introduction to AWS",
+        "host_name": "jia khan",
         "venue": "Venue 4",
         "date": "5/25/2023",
         "time": "6:00 PM",
