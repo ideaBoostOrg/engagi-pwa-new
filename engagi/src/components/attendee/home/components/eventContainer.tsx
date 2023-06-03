@@ -91,12 +91,14 @@ const EventContainer = () => {
                 <Row className="eng-staffmain">
                     <Col span={24}>
                         <Row>
-                            <span className="eng-profilename">All events</span>
+                            <Col span={24} className="eng-titlecontainer">
+                                <span className="eng-profilename">All events</span>
+                            </Col>
                         </Row>
                         <Row className="eng-searchbarcontainer">
                             <Col span={22}>
-                                <Search placeholder="input search text"
-                                    onChange={(e) => {onSearch(e.target.value);}} style={{ width: 200 }} />
+                                <Search placeholder="Input search text" className="eng-search"
+                                    onChange={(e) => { onSearch(e.target.value); }} />
                             </Col>
                             <Col span={2} className="eng-searchbarRight">
                                 <Popover
@@ -112,7 +114,7 @@ const EventContainer = () => {
                     </Col>
                     <div>
                         {allDataset.map((eventData) => {
-                            return <Card className="eng-eventcard" key={eventData.id} onClick={() => {handleView(eventData);}}>
+                            return <Card className="eng-eventcard" key={eventData.id} onClick={() => { handleView(eventData); }}>
                                 <Row className="eng-detailscard">
                                     <Col className="eng-eventimage" xs={7}>
                                         <div className="eng-image">
@@ -120,7 +122,6 @@ const EventContainer = () => {
                                         </div>
                                     </Col>
                                     <Col className="eng-eventdescription" xs={16}>
-                                        <Row><span className="eng-detailtitle">{eventData.name}</span></Row>
                                         <Row><span className="eng-detailtitle">{eventData.event_name}</span></Row>
                                         <Row><span>{eventData.host_name}</span></Row>
                                         <Row><span>{eventData.venue}</span></Row>

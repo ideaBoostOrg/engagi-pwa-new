@@ -66,7 +66,7 @@
 .eng-eventcard {
     margin: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-family: $font-family;
+    font-family: $font-family !important;
     font-size: 15px;
     cursor: pointer;
 }
@@ -159,4 +159,15 @@
     font-size: 16px;
     color: $header-color;
     font-weight: 700;
+}
+
+.eng-search {
+    .ant-input {
+        margin-left: 15px;
+        width: 100%;
+        font-family: $font-family !important;
+        font-weight: 500;
+        font-size: 15px !important;
+    }
+    
 }
