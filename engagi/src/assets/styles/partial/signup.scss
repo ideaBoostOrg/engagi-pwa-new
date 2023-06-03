@@ -1,6 +1,8 @@
 .eng-form-input {
     width: 95%;
     color: $header-color !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
 }
 
 .eng-form-input .ant-input {
@@ -24,10 +26,19 @@
     font-weight: 700 !important;
     margin-bottom: 30px;
 
-    .ant-select-dropdown .ant-select-item {
+    &-event {
+        margin-left: 65px;
+    }
+
+    .ant-select .ant-select-selection-item {
         font-size: $font-family !important;
-        font-weight: 700;
-        font-size: 15px;
+        height: 40px;
+        font-weight: 700 !important;
+        font-size: 15px !important;
+    }
+
+    .ant-select-single .ant-select-selector {
+        background-color: red !important;
     }
 
     .ant-select-single .ant-select-selector .ant-select-selection-item {

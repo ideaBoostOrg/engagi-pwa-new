@@ -3,6 +3,7 @@
       {
         "id": "1",
         "name": "Event 6",
+        "image": "qrcode",
         "event_name": "Javascript and features",
         "host_name": "Hana siara",
         "venue": "Venue 1",
@@ -14,6 +15,7 @@
       {
         "id": "2",
         "name": "Event 7",
+        "image": "qr2",
         "event_name": "host your web app",
         "host_name": "Senarath kumara",
         "venue": "Venue 2",
@@ -26,6 +28,7 @@
       {
         "id": "3",
         "name": "Event 8",
+        "image": "qr3",
         "event_name": "AWS and it's features",
         "host_name": "Jay loadan",
         "venue": "Venue 3",
@@ -37,6 +40,7 @@
       {
         "id": "4",
         "name": "Event 9",
+        "image": "qr3",
         "event_name": "introduction to AWS",
         "host_name": "jia khan",
         "venue": "Venue 4",

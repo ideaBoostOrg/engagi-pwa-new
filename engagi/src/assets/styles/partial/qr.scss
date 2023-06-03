@@ -5,16 +5,22 @@
 
 .eng-middetailcontainer {
     font-size: 20px;
-    padding-top: 20px;
     font-family: $font-family;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    &_code {
-        padding-top: 10px !important;
+    &_col {
+        padding-left: 10px !important;
+        margin-left: 30px;
     }
+}
+
+.eng-eventselect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .eng-profileImeage {

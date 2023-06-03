@@ -1,4 +1,4 @@
-import { Button, Col, Form, Image, Row, Select } from 'antd';
+import { Button, Col, Form, Image, Modal, Row, Select } from 'antd';
 import React, { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import signup from '../../assets/images/signup.jpg';
@@ -25,28 +25,15 @@ const Signup = () => {
     const handleSignup = useCallback((role: string) => {
         if (role === 'attendee') {
             navigate('/home');
-            // Modal.alert({
-            //     content: 'You signed up successfully.',
-            //     closeOnMaskClick: true,
-            //     confirmText: 'Ok',
-            //     className: 'smk-modal smk-modal_alert',
-            // });
+            Modal.success({ content: 'You have successfully logged in as attendee' });
         } else if (role === 'organizer') {
             navigate('/attendehome');
-            // Modal.alert({
-            //     content: 'You signed up successfully.',
-            //     closeOnMaskClick: true,
-            //     confirmText: 'Ok',
-            //     className: 'smk-modal smk-modal_alert',
-            // });
-        } else {
+            Modal.success({ content: 'You have successfully logged in as organizer' });
+        } else if (role === 'admin') {
             navigate('/adminhome');
-            // Modal.alert({
-            //     content: 'Your selected value is not valid',
-            //     closeOnMaskClick: true,
-            //     confirmText: 'Ok',
-            //     className: 'smk-modal smk-modal_alert',
-            // });
+            Modal.success({ content: 'You have successfully logged in as admin' });
+        } else {
+            Modal.warning({ content: 'Please select a role to continue' });
         }
     }, [navigate, role]);
     return (

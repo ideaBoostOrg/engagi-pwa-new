@@ -14,6 +14,7 @@ export type EventDataType = {
 export type AllDataType = {
     id: string;
     name: string;
+    image: string;
     event_name: string;
     host_name: string;
     venue: string;

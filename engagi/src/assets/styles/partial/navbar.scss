@@ -24,7 +24,7 @@
   }
 
   .eng-tabs {
-    border-radius: 45px !important;
+    height: 0px !important;
   }
   
   .eng-navbar-icon {
@@ -32,14 +32,14 @@
     font-size: 25px;
     font-weight: 700;
     display: flex;
-    padding-left: 8px;
+    padding-left: 10px;
     justify-content: center;
     align-items: center;
   }
 
   .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     display: flex;
-    padding: 8px !important;
+    padding: 5px !important;
     border-radius: 20px !important;
     background-color: $white-color !important;
     color: $header-color !important;
