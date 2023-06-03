@@ -12,8 +12,8 @@ interface cardContainerProps {
 
 const CardContainer = ({ eventDataArray }: cardContainerProps) => {
     const navigate = useNavigate();
-    const handleView = () => {
-        navigate('/home/view');
+    const handleView = (eventData: EventDataType) => {
+        navigate('/home/view', { state: { eventData } });
     };
     return (
         <Row>
@@ -25,7 +25,7 @@ const CardContainer = ({ eventDataArray }: cardContainerProps) => {
                                 <EventState eventStatus={eventData.state} />
                             </Row>
                         </Col>
-                        <Card className="eng-eventcard" onClick={handleView}>
+                        <Card className="eng-eventcard" onClick={() => {handleView(eventData);}}>
                             <Row className="eng-detailscard">
                                 <Col className="eng-eventimage" xs={7}>
                                     <div className="eng-imag">

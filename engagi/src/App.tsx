@@ -9,6 +9,9 @@ import Splash from './components/splash/splash';
 import Signup from './components/signup/signup';
 import Started from './components/started.tsx/started';
 import EventContainer from './components/attendee/home/components/eventContainer';
+import Yesterday from './components/attendee/home/components/dummy_pages/yesterday';
+import NextDay from './components/attendee/home/components/dummy_pages/nextDay';
+import EventCardView from './components/attendee/home/components/eventCardView';
 
 const App = () => {
     return (
@@ -19,6 +22,9 @@ const App = () => {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/events" element={<EventContainer />} />
+                <Route path="/home/view" element={<EventCardView />} />
+                <Route path="/yesterday" element={<Yesterday />} />
+                <Route path="/nextday" element={<NextDay />} />
                 <Route path="/notification" element={<Notifications />} />
                 <Route path="/qr" element={<Qrscan />} />
                 <Route path="/profile" element={<Profile />} />

@@ -20,13 +20,13 @@ const EventContainer = () => {
     const actions = (
         <Row>
             <Col span={24}>
-                <p>day 1</p>
+                <p>yesterday</p>
             </Col>
             <Col span={24}>
-                <p>day 2</p>
+                <p>today</p>
             </Col>
             <Col span={24}>
-                <p>day 3</p>
+                <p>nextday</p>
             </Col>
         </Row>
     );
@@ -92,7 +92,8 @@ const EventContainer = () => {
                         </Row>
                         <Row className="eng-searchbarcontainer">
                             <Col span={22}>
-                                <Search placeholder="input search text" onSearch={onSearch} style={{ width: 200 }} />
+                                <Search placeholder="input search text"
+                                    onChange={(e) => {onSearch(e.target.value);}} style={{ width: 200 }} />
                             </Col>
                             <Col span={2} className="eng-searchbarRight">
                                 <Popover
@@ -106,40 +107,26 @@ const EventContainer = () => {
                             </Col>
                         </Row>
                     </Col>
-                    {/* <div className="eng-searchbarLeft">
-                            <Search
-                                ref={searchRef}
-                                placeholder='Search event'
-                                onChange={handleSearch}
-                            />
-                        </div> */}
                     <div>
                         {allDataset.map((eventData) => {
                             return <Card className="eng-eventcard" key={eventData.id}>
-                                <div className="eng-detailscard">
-                                    <div className="eng-eventimage">
-                                        <div
-                                            style={{
-                                                height: '10vh', width: '10vh', display: 'flex',
-                                                justifyContent: 'center', alignItems: 'center',
-                                            }}>
+                                <Row className="eng-detailscard">
+                                    <Col className="eng-eventimage" xs={7}>
+                                        <div className="eng-image">
                                             <Image src={image1} style={{ objectFit: 'cover', borderRadius: '10px' }} />
                                         </div>
-                                    </div>
-                                    <div className="eng-eventdescription">
-                                        <div className="eng-carddiv">
-                                            <div className="eng-cardleft">
-                                                <span className="eng-detailtitle">{eventData.eventName}</span>
-                                            </div>
-                                        </div>
-                                        <div><span className="eng-detailtitle">{eventData.title}</span></div>
-                                        <div><span>{eventData.eventHost}</span></div>
-                                        <div className="eng-carddiv">
-                                            <div className="eng-cardleft"><span>{eventData.date}</span></div>
-                                            <div className="eng-cardleft"><span>{eventData.time}</span></div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </Col>
+                                    <Col className="eng-eventdescription" xs={16}>
+                                        <Row><span className="eng-detailtitle">{eventData.eventName}</span></Row>
+                                        <Row><span className="eng-detailtitle">{eventData.title}</span></Row>
+                                        <Row><span>{eventData.eventHost}</span></Row>
+                                        <Row><span>{eventData.venue}</span></Row>
+                                        <Row className="eng-carddiv">
+                                            <Row className="eng-cardleft"><span>{eventData.date}</span></Row>
+                                            <Row className="eng-cardleft"><span>{eventData.time}</span></Row>
+                                        </Row>
+                                    </Col>
+                                </Row>
                             </Card>;
                         })}
                     </div>

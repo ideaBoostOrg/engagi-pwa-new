@@ -7,7 +7,9 @@
         "eventHost": "Hana siara",
         "venue": "Venue 1",
         "date": "5/20/2023",
-        "time": "10:00 AM"
+        "time": "10:00 AM",
+        "attendance": 12,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "2",
@@ -16,7 +18,9 @@
         "eventHost": "Senarath kumara",
         "venue": "Venue 2",
         "date": "2/06/2023",
-        "time": "2:30 PM"
+        "time": "2:30 PM",
+        "attendance": 20,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "3",
@@ -25,7 +29,9 @@
         "eventHost": "Jay loadan",
         "venue": "Venue 3",
         "date": "5/19/2023",
-        "time": "6:00 PM"
+        "time": "6:00 PM",
+        "attendance": 65,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "4",
@@ -34,7 +40,9 @@
         "eventHost": "jia khan",
         "venue": "Venue 4",
         "date": "5/25/2023",
-        "time": "6:00 PM"
+        "time": "6:00 PM",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       }
     ]
   }

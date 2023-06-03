@@ -7,6 +7,8 @@ export type EventDataType = {
     date: string;
     time: string;
     state: string;
+    attendance: Number;
+    description: string;
 };
 
 export type AllDataType = {
@@ -17,4 +19,6 @@ export type AllDataType = {
     venue: string;
     date: string;
     time: string;
+    attendance: Number;
+    description: string;
 };

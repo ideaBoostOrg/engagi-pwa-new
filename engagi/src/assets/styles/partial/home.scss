@@ -48,6 +48,12 @@
     font-weight: 800;
 }
 
+.eng-subtitle {
+    color: $header-color;
+    font-size: 28px;
+    font-weight: 800;
+}
+
 .eng-eventcard {
     margin: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -58,6 +64,19 @@
 
 .eng-detailscard {
     display: flex;
+}
+
+.eng-viewtitle {
+    color: $header-color;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: $font-family;
+}
+
+.eng-viewspan {
+    font-size: 15px;
+    font-weight: 800;
+    font-family: $font-family;
 }
 
 .eng-eventimage {
