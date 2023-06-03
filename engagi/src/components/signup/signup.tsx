@@ -1,7 +1,6 @@
 import { Button, Col, Form, Image, Row, Select } from 'antd';
 import React, { useCallback, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import Footer from '../footer/footer';
 import signup from '../../assets/images/signup.jpg';
 import Footer from '../footer/footer';
 
