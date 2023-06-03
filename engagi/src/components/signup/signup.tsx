@@ -41,6 +41,7 @@ const Signup = () => {
             //     className: 'smk-modal smk-modal_alert',
             // });
         } else {
+            navigate('/adminhome');
             // Modal.alert({
             //     content: 'Your selected value is not valid',
             //     closeOnMaskClick: true,
@@ -79,6 +80,7 @@ const Signup = () => {
                                 options={[
                                     { value: 'attendee', label: 'Attendee' },
                                     { value: 'organizer', label: 'Organizer' },
+                                    { value: 'admin', label: 'Admin' },
                                 ]}
                             />
                         </Form.Item>
