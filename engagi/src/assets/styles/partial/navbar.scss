@@ -2,62 +2,47 @@
 .eng-navbar {
     position: fixed;
     bottom: 0;
-    right: 0;
-    left: 0;
+    right: calc(25px);
+    left: calc(25px);
     height: 8vh;
     z-index: 999;
-    background-color: $white-color;
+    background-color: $background-color;
+
+    .ant-tabs {
+      color: $white-color !important;
+      background-color: $header-color !important;
+    }
+    .ant-tabs-tab {
+      display: flex;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: $white-color !important;
+      background-color: $active-color !important;
+    }
+  }
+
+  .eng-tabs {
+    border-radius: 45px !important;
   }
   
-  // .eng-navbar .am-grid-item {
-  //   color: $primary-color !important;
-  //   padding: 10px !important;
-  // }
-  
-  // .eng-navbar .am-grid-item-content {
-  //   height: 60px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  // }
-  
-  // .eng-navbar .am-tab-bar {
-  //   height: 100%;
-  //   display: flex;
-  //   align-items: stretch;
-  // }
-  
-  // .eng-navbar .am-tab-bar-tab {
-  //   flex: 1;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
-  //   font-size: 15px;
-  // }
-  
-  // .eng-navbar .adm-tab-bar-item-active {
-  //   color: $primary-color !important;
-  //   border-radius: 10px;
-  //   font-size: 16px !important;
-  //   font-weight: 700;
-  // }
-  
-  // .adm-tab-bar-item {
-  //   color: $header-color !important;
-  // }
-
   .eng-navbar-icon {
     cursor: pointer;
     font-size: 25px;
     font-weight: 700;
+    display: flex;
+    padding-left: 8px;
+    justify-content: center;
+    align-items: center;
   }
 
   .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    border: 1px solid red;
     display: flex;
-    padding-left: 11px;
+    padding: 8px !important;
+    border-radius: 20px !important;
+    background-color: $white-color !important;
+    color: $header-color !important;
     justify-content: center !important;
     align-items: center !important;
   }

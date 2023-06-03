@@ -15,7 +15,12 @@ const Navbar = () => {
         <div>
             <Col span={24} className="eng-navbar">
                 <Tabs
-                    tabBarStyle={{ backgroundColor: '#f0f2f5', padding: '10px' }}
+                    tabBarStyle={{ 
+                        backgroundColor: '#141466',
+                        paddingTop: '4px',
+                        borderRadius: '30px',
+                    }}
+                    className="eng-tabs"
                     centered
                     activeKey={activeKey}
                     onTabClick={handleTabClick}
