@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../../../header/header';
 import Navbar from '../../../navbar/navbar';
 import { useLocation } from 'react-router-dom';
+import GoBack from '../../../common/goBack';
 
 const EventCardView = () => {
     const location = useLocation();
@@ -15,7 +16,8 @@ const EventCardView = () => {
             </Row>
             <div className="eng-detailsdiv">
                 <Row className="eng-staffmain">
-                    <Col className="eng-titlecontainer" span={24}>
+                    <GoBack />
+                    <Col className="eng-titlecontainer eng-titlecontainer-view" span={24}>
                         <Row>
                             <Card>
                                 <Col span={24}>
@@ -43,7 +45,7 @@ const EventCardView = () => {
                                             </Col>
                                             <Col span={12}>
                                                 <Progress type="circle" percent={dataArray.attendance} size="small" />
-                                            </Col>                  
+                                            </Col>
                                         </Row>
                                         <Row className="eng-viewtitle">Description</Row>
                                         <Row><span className="eng-viewspan">{dataArray.description}</span></Row>

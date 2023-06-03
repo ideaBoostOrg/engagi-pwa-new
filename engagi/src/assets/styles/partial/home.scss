@@ -40,6 +40,15 @@
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
+
+    &-view {
+        padding-top: 0px !important;
+    }
+
+    .ant-card {
+        border: none !important;
+        outline: none !important;
+    }
 }
 
 .eng-profilename {
