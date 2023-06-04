@@ -61,6 +61,10 @@
     color: $header-color;
     font-size: 28px;
     font-weight: 800;
+
+    &-popup {
+        font-size: 20px !important;
+    }
 }
 
 .eng-eventcard {
@@ -106,6 +110,14 @@
 
 .eng-viewmoreButton {
     display: flex;
+
+    &-unable {
+        justify-content: end;
+        align-items: end;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding-right: 20px;
+    }  
 }
 
 .eng-ptitle {

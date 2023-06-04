@@ -12,6 +12,7 @@ import EventContainer from './components/attendee/home/components/eventContainer
 import Yesterday from './components/attendee/home/components/dummy_pages/yesterday';
 import NextDay from './components/attendee/home/components/dummy_pages/nextDay';
 import EventCardView from './components/attendee/home/components/eventCardView';
+import Settings from './components/settings/settings';
 
 const App = () => {
     return (
@@ -28,6 +29,7 @@ const App = () => {
                 <Route path="/notification" element={<Notifications />} />
                 <Route path="/qr" element={<Qrscan />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/setting" element={<Settings />} />
             </Routes>
         </BrowserRouter>
     );

@@ -1,7 +1,7 @@
 import { Col, Image, Popover, Row } from 'antd';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { LogoutOutlined, UserOutlined } from '@ant-design/icons';
+import { LogoutOutlined, SettingOutlined, UserOutlined } from '@ant-design/icons';
 import logo from '../../assets/images/header.png';
 import user from '../../assets/images/profile.svg';
 import down from '../../assets/images/down_arrow.png';
@@ -13,6 +13,9 @@ const Header = () => {
             <Col>
                 <Row className="eng-headerpopoverdiv" onClick={() => { navigate('/profile'); }}>
                     <UserOutlined className="eng-headerpopover-icon"/>Profile
+                </Row>
+                <Row className="eng-headerpopoverdiv" onClick={() => { navigate('/setting'); }}>
+                    <SettingOutlined className="eng-headerpopover-icon"/>Settings
                 </Row>
                 <Row className="eng-headerpopoverdiv" onClick={() => { navigate('/'); }}>
                     <LogoutOutlined className="eng-headerpopover-icon"/>Sign Out
