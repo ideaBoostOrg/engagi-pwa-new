@@ -9,6 +9,7 @@ const expandedNotification = () => {
     const notificationData = useLocation();
     console.log(notificationData.state.notifyData);
     const dataSet = notificationData.state.notifyData;
+
     return (
         <div className="eng-maindiv">
             <div>
@@ -21,21 +22,17 @@ const expandedNotification = () => {
                         <span className="eng-profilename">Notifications</span>
                     </div>
                     <div>
-                        <div className="eng-scheduleitemcheck">
-                            <div className="eng-schedul-details">
-                                <p>{dataSet.notification_title}</p>
-                                <div className="eng-notificationdetailscontainer">
-                                    <div className="eng-notificationdetailsright">
-                                        <p className="eng-detailstag">{dataSet.notification_description}</p>
-                                    </div>
+                        <div className="eng-notificationsdetails">
+                            <p className="eng-notificationtitle">{dataSet.notification_title}</p>
+                            <div className="eng-notificationdetailscontainer">
+                                <div className="eng-notificationdetailsright">
+                                    <p className="eng-detailstag">{dataSet.notification_description}</p>
                                 </div>
-                                <div className="eng-notificationdate">
-                                    <p className="eng-detailstag">
-                                        {dataSet.notification_date}</p>
-                                </div>
-                                <div className="eng-notificationdate">
-                                    <p className="eng-detailstag">{dataSet.notification_time}</p>
-                                </div>
+                            </div>
+                            <div className="eng-notificationdate">
+                                <p className="eng-detailstag">
+                                    {dataSet.notification_date} </p>
+                                <p className="eng-detailstag">{'\u00A0'}at{'\u00A0'}{dataSet.notification_time}</p>
                             </div>
                         </div>
                     </div>

@@ -4,7 +4,7 @@ import Navbar from '../navbar/navbar';
 import { useNavigate } from 'react-router-dom';
 import { NotificationType } from '../../types/commonTypes';
 import notificationData from '../../../src/data/notifications.json';
-import { Checkbox, Col } from 'antd';
+import { Col } from 'antd';
 
 const Notifications = () => {
 
@@ -48,23 +48,22 @@ const Notifications = () => {
                                     .map((item, index) => {
                                         return (
                                             <div key={index} className="eng-notificationcards">
-                                                <div className="eng-notificationscheckbox"><Checkbox /></div>
-                                                <div
-                                                    className="eng-schedul-row eng-schedul-row_notifications">
-                                                    <div className="eng-schedul-details">
-                                                        <div className="eng-mainnotifycontainer"
-                                                            onClick={() => { handleView(item); }}>
-                                                            <div className="eng-mainnotifycontainerleft">
-                                                                <span className="eng-notificationptitle">
-                                                                    {item.notification_title}
-                                                                </span>
-                                                                <span className="eng-notificationpdesc">
-                                                                    {item.notification_description}
-                                                                </span>
-                                                                <span className="eng-notificationptime">
-                                                                    {item.notification_time}
-                                                                </span>
-                                                            </div>
+                                                <div className="eng-mainnotifycontainer" onClick={() => { handleView(item); }}>
+                                                    <div className="eng-mainnotifycontainerleft">
+                                                        <div>
+                                                            <span className="eng-notificationtitle">
+                                                                {item.notification_title}
+                                                            </span>
+                                                        </div>
+                                                        <div>
+                                                            <span className="eng-notificationdesc">
+                                                                {item.notification_description}
+                                                            </span>
+                                                        </div>
+                                                        <div className="eng-notificationtimecorner">
+                                                            <span className="eng-notificationtime">
+                                                                {item.notification_time}
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </div>
