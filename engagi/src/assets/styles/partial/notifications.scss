@@ -1,23 +1,36 @@
 @import '../_variable.scss';
 
-.eng-notificationptitle {
+.eng-notificationtitle {
     font-size: 16px !important;
     font-family: $font-family;
     font-weight: 600;
 }
 
-.eng-notificationpdesc {
+.eng-notificationdesc {
     display: inline-block;
-    width: 300px;
+    width: 200px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     font-size: 14px !important;
     font-family: $font-family;
+
+    @media screen and (min-width: 370px) {
+        width: 300px !important;
+    }
+
+    @media screen and (min-width: 600px) {
+        width: 500px !important;
+    }
+
+    @media screen and (min-width:1000px) {
+        width: 900px !important;
+    }
 }
 
-.eng-notificationptime {
+.eng-notificationtime {
     font-family: $font-family;
+    color: $status-color;
     float: right;
 }
 
@@ -35,9 +48,12 @@
 
 .eng-notificationcards {
     display: flex;
+    border: 1px inset;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 10px;
     margin-bottom: 10px;
+    margin-right: 5px;
+    position: relative;
 }
 
 .eng-collapse_panel {
@@ -59,13 +75,6 @@
 .eng-collapse_description {
     font-size: 13px !important;
     font-family:$font-family;
-}
-
-.eng-notificationscheckbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 10px;
 }
 
 .eng-collapsecontainer {
@@ -106,16 +115,6 @@
     cursor: pointer;
 }
 
-.eng-status {
-    padding: 4px 20px;
-    margin-left: 0px;
-    border-radius: 6px !important;
-    font-family:$font-family;
-    width: auto !important;
-    font-weight: 400;
-    text-align: center;
-}
-
 .eng-collapse_notify {
     border-radius: 10px;
     .adm-list-item {
@@ -139,6 +138,10 @@
     margin-top: 5px;
 }
 
+.eng-notificationsdetails {
+    padding: 20px;
+}
+
 .eng-notificationdetailscontainer {
     display: flex;
 }
@@ -149,7 +152,8 @@
 
 .eng-notificationdetailsright {
     width: 100%;
-    padding-left: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .eng-notificationdate {
@@ -159,17 +163,22 @@
 }
 
 .eng-mainnotifycontainer {
+    width: 100%;
     display: flex;
     cursor: pointer;
+    margin-right: 0;
+    padding-right: 0;
 }
 
 .eng-mainnotifycontainerleft {
     width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    right: 0;
+    position: relative;
 }
 
-.eng-mainnotifycontainerright {
-    width: 100%;
-    display: flex;
-    align-items:end;
-    justify-content: end;
+.eng-notificationtimecorner {
+    float: right;
+    position: relative;
 }
