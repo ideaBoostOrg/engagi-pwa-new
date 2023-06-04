@@ -1,0 +1,175 @@
+@import '../_variable.scss';
+
+.eng-notificationptitle {
+    font-size: 16px !important;
+    font-family: $font-family;
+    font-weight: 600;
+}
+
+.eng-notificationpdesc {
+    display: inline-block;
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px !important;
+    font-family: $font-family;
+}
+
+.eng-notificationptime {
+    font-family: $font-family;
+    float: right;
+}
+
+.eng-notificationcontainer {
+    padding-top: 15px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+
+    &-view {
+        padding-top: 0px !important;
+    }
+}
+
+.eng-notificationcards {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.eng-collapse_panel {
+    font-size: 15px !important;
+    font-family:$font-family;
+    background-color: $background-color !important;
+    font-weight: 600;
+    margin-top: 10px;
+
+    .adm-list-item-content-main {
+        font-size: 15px !important;
+    }
+
+    &:hover {
+        background-color: $white-color !important;
+    }
+}
+
+.eng-collapse_description {
+    font-size: 13px !important;
+    font-family:$font-family;
+}
+
+.eng-notificationscheckbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.eng-collapsecontainer {
+    padding-top: 5px;
+
+    &_notification {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        padding-top: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        color: $primary-color;
+        font-family:$font-family;
+    }
+}
+
+.eng-markascontainer {
+    margin-right: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:$font-family;
+    color: $primary-color;
+}
+
+.eng-marktitle {
+    cursor: pointer;
+}
+
+.eng-titlediv {
+    display: flex;
+}
+
+.eng-viewibutton {
+    cursor: pointer;
+}
+
+.eng-status {
+    padding: 4px 20px;
+    margin-left: 0px;
+    border-radius: 6px !important;
+    font-family:$font-family;
+    width: auto !important;
+    font-weight: 400;
+    text-align: center;
+}
+
+.eng-collapse_notify {
+    border-radius: 10px;
+    .adm-list-item {
+        background-color: $white-color;
+        width: 300px !important;
+        font-size: 15px;
+        font-weight: 700;
+        border-radius: 10px;
+    }
+
+    .adm-list-item-content-arrow {
+        color: #1677FF !important;
+        font-weight: 700;
+    }
+}
+
+.eng-notifycontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.eng-notificationdetailscontainer {
+    display: flex;
+}
+
+.eng-notificationdetailsleft {
+    width: 30%;
+}
+
+.eng-notificationdetailsright {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.eng-notificationdate {
+    align-items: end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eng-mainnotifycontainer {
+    display: flex;
+    cursor: pointer;
+}
+
+.eng-mainnotifycontainerleft {
+    width: 100%;
+}
+
+.eng-mainnotifycontainerright {
+    width: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: end;
+}

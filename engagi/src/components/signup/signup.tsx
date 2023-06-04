@@ -32,7 +32,7 @@ const Signup = () => {
             //     className: 'smk-modal smk-modal_alert',
             // });
         } else if (role === 'organizer') {
-            navigate('/attendehome');
+            navigate('/notifications');
             // Modal.alert({
             //     content: 'You signed up successfully.',
             //     closeOnMaskClick: true,
