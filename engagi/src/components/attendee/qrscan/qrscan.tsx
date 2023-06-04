@@ -94,7 +94,9 @@ const Qrscan = () => {
                         </Row>
                     </Col>
                     <Col span={24} className="eng-viewmoreButton eng-viewmoreButton-unable">
-                        <Button onClick={handleUnable}>Unable to scan</Button>
+                        <Button onClick={handleUnable} className="eng-button eng-button-link">
+                            Unable to scan
+                        </Button>
                     </Col>
                     <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={'Submit'}>
                         <span className="eng-subtitle eng-subtitle-popup">Unable to scan QR</span>
