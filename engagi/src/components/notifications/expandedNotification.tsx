@@ -3,6 +3,7 @@ import Header from '../header/header';
 import Navbar from '../navbar/navbar';
 import GoBack from '../common/goBack';
 import { useLocation } from 'react-router';
+import { Col, Row } from 'antd';
 
 const expandedNotification = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -15,28 +16,32 @@ const expandedNotification = () => {
             <div>
                 <Header />
             </div>
-            <div className="eng-detailsdiv" style={{ paddingTop: '100px', height: '77vh' }}>
-                <div className="eng-staffmain">
+            <div className="eng-detailsdiv">
+                <Row className="eng-staffmain">
                     <GoBack />
-                    <div className="eng-titlecontainer">
-                        <span className="eng-profilename">Notifications</span>
-                    </div>
-                    <div>
-                        <div className="eng-notificationsdetails">
-                            <p className="eng-notificationtitle">{dataSet.notification_title}</p>
-                            <div className="eng-notificationdetailscontainer">
-                                <div className="eng-notificationdetailsright">
-                                    <p className="eng-detailstag">{dataSet.notification_description}</p>
+                    <Col className="eng-notificationdetailscontainer" span={24}>
+                        <Row>
+                            <Col>
+                                <div className="eng-titlecontainer">
+                                    <span className="eng-subtitle">{dataSet.notification_title}</span>
                                 </div>
-                            </div>
-                            <div className="eng-notificationdate">
-                                <p className="eng-detailstag">
-                                    {dataSet.notification_date} </p>
-                                <p className="eng-detailstag">{'\u00A0'}at{'\u00A0'}{dataSet.notification_time}</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                <div>
+                                    <div className="eng-notificationsdetails">
+                                        <div className="eng-notificationdetailsright">
+                                            <p className="eng-detailstag">{dataSet.notification_description}</p>
+                                        </div>
+                                        <div className="eng-notificationdate">
+                                            <p className="eng-detailstag">
+                                                {dataSet.notification_date} </p>
+                                            <p className="eng-detailstag">{'\u00A0'}at{'\u00A0'}{dataSet.notification_time}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
+
+                </Row>
             </div>
             <div>
                 <Navbar />

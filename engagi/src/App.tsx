@@ -14,6 +14,7 @@ import NextDay from './components/attendee/home/components/dummy_pages/nextDay';
 import EventCardView from './components/attendee/home/components/eventCardView';
 import Settings from './components/settings/settings';
 import ExpandedNotification from './components/notifications/expandedNotification';
+import Scanner from './components/organizer/scanner/scanner';
 
 const App = () => {
     return (
@@ -32,6 +33,7 @@ const App = () => {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/setting" element={<Settings />} />
                 <Route path="/notifications/view" element={<ExpandedNotification />} />
+                <Route path="/orgScan" element={<Scanner />} />
             </Routes>
         </BrowserRouter>
     );

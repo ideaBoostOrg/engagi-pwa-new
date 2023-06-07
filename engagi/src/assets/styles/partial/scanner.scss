@@ -1,0 +1,19 @@
+@import '../_variable.scss';
+
+.eng-scannercontainer {
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.eng-checkinContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.eng-buttonCheckin {
+    width: 90% !important;
+    text-align: center !important;
+    padding: 0px !important;
+}
