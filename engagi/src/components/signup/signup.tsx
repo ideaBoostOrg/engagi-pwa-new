@@ -25,7 +25,7 @@ const Signup = () => {
     const handleSignup = useCallback((role: string) => {
         if (role === 'attendee') {
             navigate('/home');
-            Modal.success({ content: 'You have successfully logged in as attendee' });
+            // Modal.success({ content: 'You have successfully logged in as attendee' });
         } else if (role === 'organizer') {
             navigate('/home');
             // Modal.alert({
@@ -34,9 +34,9 @@ const Signup = () => {
             //     confirmText: 'Ok',
             //     className: 'smk-modal smk-modal_alert',
             // });
-        } else {
+        } else if (role === 'admin') {
             navigate('/adminhome');
-            Modal.success({ content: 'You have successfully logged in as admin' });
+            // Modal.success({ content: 'You have successfully logged in as admin' });
         } else {
             Modal.warning({ content: 'Please select a role to continue' });
         }
