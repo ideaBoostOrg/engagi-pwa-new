@@ -140,10 +140,14 @@
 
 .eng-notificationsdetails {
     padding: 20px;
+    // width: 100%;
+    // position: relative;
 }
 
 .eng-notificationdetailscontainer {
     display: flex;
+    margin-top: -270px;
+    
 }
 
 .eng-notificationdetailsleft {
@@ -151,7 +155,7 @@
 }
 
 .eng-notificationdetailsright {
-    width: 100%;
+    width: 100% !important;
     text-align: justify;
     text-justify: inter-word;
 }
