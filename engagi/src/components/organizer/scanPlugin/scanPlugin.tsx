@@ -34,7 +34,7 @@ export class ScanPlugin extends React.Component<{ qrCodeSuccessCallback: any }> 
     override componentWillUnmount() {
         if (this.html5QrCode && this.html5QrCode.isScanning)
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            this.html5QrCode.stop().then((r) => {
+            this.html5QrCode.stop().then((r: any) => {
                 this.html5QrCode?.clear();
             });
     }
@@ -46,14 +46,14 @@ export class ScanPlugin extends React.Component<{ qrCodeSuccessCallback: any }> 
                 .start(
                     { facingMode: 'environment' },
                     { fps: 10, qrbox: 250 },
-                    (decodedText, decodedResult) => {
+                    (decodedText: any, decodedResult : any) => {
                         this.props.qrCodeSuccessCallback(decodedText);
                     },
-                    (errorMessage) => {
+                    (errorMessage: any) => {
                         //
                     },
                 )
-                .then((r) => {
+                .then((r: any) => {
                     //   console.log(this.html5QrCode?.getRunningTrackCapabilities());
                     //   this.html5QrCode?.applyVideoConstraints({
                     //     focusMode: 'continuous',
@@ -61,7 +61,7 @@ export class ScanPlugin extends React.Component<{ qrCodeSuccessCallback: any }> 
                     //     advanced: [{ zoom: 2.0 }],
                     //   });
                 })
-                .catch((err) => {
+                .catch((err: any) => {
                     alert(err);
                 });
     }
