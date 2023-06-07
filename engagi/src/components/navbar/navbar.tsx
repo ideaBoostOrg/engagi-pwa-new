@@ -36,7 +36,7 @@ const Navbar = () => {
                         key="/qr"></TabPane>
                     <TabPane
                         tab={<BellOutlined className="eng-navbar-icon" />}
-                        key="/notification"></TabPane>
+                        key="/notifications"></TabPane>
                 </Tabs>
             </Col>
         </div>

@@ -27,9 +27,14 @@ const Signup = () => {
             navigate('/home');
             Modal.success({ content: 'You have successfully logged in as attendee' });
         } else if (role === 'organizer') {
-            navigate('/attendehome');
-            Modal.success({ content: 'You have successfully logged in as organizer' });
-        } else if (role === 'admin') {
+            navigate('/home');
+            // Modal.alert({
+            //     content: 'You signed up successfully.',
+            //     closeOnMaskClick: true,
+            //     confirmText: 'Ok',
+            //     className: 'smk-modal smk-modal_alert',
+            // });
+        } else {
             navigate('/adminhome');
             Modal.success({ content: 'You have successfully logged in as admin' });
         } else {

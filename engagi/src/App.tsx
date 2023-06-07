@@ -13,6 +13,7 @@ import Yesterday from './components/attendee/home/components/dummy_pages/yesterd
 import NextDay from './components/attendee/home/components/dummy_pages/nextDay';
 import EventCardView from './components/attendee/home/components/eventCardView';
 import Settings from './components/settings/settings';
+import ExpandedNotification from './components/notifications/expandedNotification';
 
 const App = () => {
     return (
@@ -26,10 +27,11 @@ const App = () => {
                 <Route path="/home/view" element={<EventCardView />} />
                 <Route path="/yesterday" element={<Yesterday />} />
                 <Route path="/nextday" element={<NextDay />} />
-                <Route path="/notification" element={<Notifications />} />
+                <Route path="/notifications" element={<Notifications />} />
                 <Route path="/qr" element={<Qrscan />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/setting" element={<Settings />} />
+                <Route path="/notifications/view" element={<ExpandedNotification />} />
             </Routes>
         </BrowserRouter>
     );

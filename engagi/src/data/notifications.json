@@ -1,0 +1,85 @@
+{
+    "notification": [
+        {
+            "notification_id": "1",
+            "notification_title": "The new Meetup just started",
+            "notification_status": "Completed",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "PMO CLUB Agile Governance meetup just started at the main hall. Participants who are unable to join physically can join online through our website.",
+            "read": true
+        },
+        {
+            "notification_id": "2",
+            "notification_title": "Password Reset",
+            "notification_status": "Scheduled",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "Your password has successfully changed.",
+            "read": false
+        },
+        {
+            "notification_id": "3",
+            "notification_title": "Thank you for booking a meeting with us.",
+            "notification_status": "Cancelled",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "We are pleased to inform you that we have accepted the request for a meeting with our panel and the meeting date and time will be informed soon.",
+            "read": false
+        },
+        {
+            "notification_id": "4",
+            "notification_title": "Great News! We are launching our 5th Fund",
+            "notification_status": "In-progress",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "We are looking for a software engineer to join our team. You will be responsible for developing and maintaining software applications, debugging code, and collaborating with other engineers to design and implement new features.",
+            "read": false
+        },
+        {
+            "notification_id": "5",
+            "notification_title": "Lorem ipsum dolor,itaque expedita sapiente laborum officia alias, at animi maiores?",
+            "notification_status": "Cancelled",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "We are looking for a software engineer to join our team. You will be responsible for developing and maintaining software applications, debugging code, and collaborating with other engineers to design and implement new features.",
+            "read": false
+        },
+        {
+            "notification_id": "6",
+            "notification_title": "Password Reset",
+            "notification_status": "Scheduled",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "Your password has successfully changed.",
+            "read": false
+        },
+        {
+            "notification_id": "7",
+            "notification_title": "Thank you for booking a meeting with us.",
+            "notification_status": "Cancelled",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "We are pleased to inform you that we have accepted the request for a meeting with our panel and the meeting date and time will be informed soon.",
+            "read": false
+        },
+        {
+            "notification_id": "8",
+            "notification_title": "Thank you for booking a meeting with us.",
+            "notification_status": "Cancelled",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "We are pleased to inform you that we have accepted the request for a meeting with our panel and the meeting date and time will be informed soon.",
+            "read": false
+        },
+        {
+            "notification_id": "9",
+            "notification_title": "Great News! We are launching our 5th Fund",
+            "notification_status": "In-progress",
+            "notification_date": "22/05/2023",
+            "notification_time": "19:11:02",
+            "notification_description": "We are looking for a software engineer to join our team. You will be responsible for developing and maintaining software applications, debugging code, and collaborating with other engineers to design and implement new features.",
+            "read": false
+        }
+    ]
+}
