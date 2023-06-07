@@ -1,4 +1,4 @@
-import { Card, Col, Progress, Row } from 'antd';
+import { Card, Col, Row } from 'antd';
 import React from 'react';
 import Header from '../../../header/header';
 import Navbar from '../../../navbar/navbar';
@@ -20,7 +20,7 @@ const EventCardView = () => {
                         <Row>
                             <Card>
                                 <Col span={24}>
-                                    <span className="eng-subtitle">{dataArray.event_name}</span>
+                                    <span className="eng-viewtitle eng-viewtitle-topic">{dataArray.event_name}</span>
                                 </Col>
                                 <Row className="eng-detailscard">
                                     <Col className="eng-eventdescription" xs={24}>
@@ -36,14 +36,6 @@ const EventCardView = () => {
                                                 <Row><span className="eng-viewspan">{dataArray.venue}</span></Row>
                                                 <Row><span className="eng-viewspan">{dataArray.date}</span></Row>
                                                 <Row><span className="eng-viewspan">{dataArray.time}</span></Row>
-                                            </Col>
-                                        </Row>
-                                        <Row className="eng-viewtitle">
-                                            <Col span={12}>
-                                                <span>Attendance</span>
-                                            </Col>
-                                            <Col span={12}>
-                                                <Progress type="circle" percent={dataArray.attendance} size="small" />
                                             </Col>
                                         </Row>
                                         <Row className="eng-viewtitle">Description</Row>

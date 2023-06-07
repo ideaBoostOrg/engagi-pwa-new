@@ -1,7 +1,7 @@
 import { BellOutlined, HomeOutlined, QrcodeOutlined } from '@ant-design/icons';
 import { Col, Tabs } from 'antd';
 import TabPane from 'antd/es/tabs/TabPane';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
@@ -11,6 +11,9 @@ const Navbar = () => {
         setActiveKey(key);
         navigate(`${key}`);
     };
+    useEffect(() => {
+        setActiveKey(activeKey);
+    }, [activeKey]);
     return (
         <div>
             <Col span={24} className="eng-navbar">

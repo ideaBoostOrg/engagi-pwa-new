@@ -20,13 +20,13 @@ const EventContainer = () => {
     const actions = (
         <Row>
             <Col span={24}>
-                <p>yesterday</p>
+                <p onClick={() => {handleNextpage('Day-1');}}>Day 1</p>
             </Col>
             <Col span={24}>
-                <p>today</p>
+                <p onClick={() => {handleNextpage('Day-2');}}>Day 2</p>
             </Col>
             <Col span={24}>
-                <p>nextday</p>
+                <p onClick={() => {handleNextpage('Day-3');}}>Day 3</p>
             </Col>
         </Row>
     );
@@ -63,9 +63,9 @@ const EventContainer = () => {
     };
     const handleNextpage = (selectedOptionValue: string) => {
         console.log(selectedOptionValue);
-        if (selectedOptionValue == '5/23/2023') {
+        if (selectedOptionValue == 'Day-1') {
             navigate('/yesterday');
-        } else if (selectedOptionValue == '5/24/2023') {
+        } else if (selectedOptionValue == 'Day-2') {
             navigate('/events');
         } else {
             navigate('/nextday');

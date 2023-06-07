@@ -1,6 +1,6 @@
 import { Image } from 'antd';
 import React from 'react';
-import leftArrow from '../../assets/images/left_arrow.png';
+import leftArrow from '../../assets/images/left-arrow.png';
 import { useNavigate } from 'react-router-dom';
 
 const GoBack = () => {

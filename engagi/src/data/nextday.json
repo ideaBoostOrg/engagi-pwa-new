@@ -2,39 +2,51 @@
     "nextday": [
       {
         "id": "1",
-        "eventName": "Event 13",
-        "title": "User interface designing",
-        "eventHost": "Mark anthony",
+        "name": "Event 13",
+        "event_name": "User interface designing",
+        "host_name": "Mark anthony",
         "venue": "Venue 1",
         "date": "5/25/2023",
-        "time": "10:00 AM"
+        "time": "10:00 AM",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "2",
-        "eventName": "Event 14",
-        "title": "famous design tools",
-        "eventHost": "Jay camaron",
+        "name": "Event 14",
+        "event_name": "famous design tools",
+        "host_name": "Jay camaron",
         "venue": "Venue 2",
         "date": "5/25/2023",
-        "time": "2:30 PM"
+        "time": "2:30 PM",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "3",
-        "eventName": "Event 15",
-        "title": "object oriented programming",
-        "eventHost": "Helsin bran",
+        "name": "Event 15",
+        "event_name": "object oriented programming",
+        "host_name": "Helsin bran",
         "venue": "Venue 3",
         "date": "5/25/2023",
-        "time": "6:00 PM"
+        "time": "6:00 PM",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "4",
-        "eventName": "Event 16",
-        "title": "cyber security",
-        "eventHost": "Ajantha athukorala",
+        "name": "Event 16",
+        "event_name": "cyber security",
+        "host_name": "Ajantha athukorala",
+        "image": "qr3",
         "venue": "Venue 4",
         "date": "5/25/2023",
-        "time": "6:00 PM"
+        "time": "6:00 PM",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       }
     ]
   }

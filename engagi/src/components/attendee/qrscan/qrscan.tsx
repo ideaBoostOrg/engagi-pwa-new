@@ -1,4 +1,4 @@
-import { Button, Col, Form, Image, Input, Modal, Row, Select } from 'antd';
+import { Col, Image, Row } from 'antd';
 import React, { useEffect, useState } from 'react';
 import Header from '../../header/header';
 import Navbar from '../../navbar/navbar';
@@ -9,28 +9,30 @@ import qrcode from '../../../assets/images/qrcode.svg';
 const Qrscan = () => {
     const [eventData, setEventdata] = useState<AllDataType[]>([]);
     const [selectedEvent, setSelectedEvent] = useState<string>('');
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [isModalOpen, setIsModalOpen] = useState(false);
     const [eventImage, setEventImage] = useState<string>('qrcode');
 
     useEffect(() => {
         setEventdata(allData.allevents);
     }, []);
 
-    const handleEventChange = (value: string) => {
-        setSelectedEvent(value);
-    };
+    // const handleEventChange = (value: string) => {
+    //     setSelectedEvent(value);
+    // };
 
-    const handleUnable = () => {
-        setIsModalOpen(true);
-    };
+    // const handleUnable = () => {
+    //     setIsModalOpen(true);
+    // };
 
-    const handleOk = () => {
-        setIsModalOpen(false);
-    };
+    // const handleOk = () => {
+    //     setIsModalOpen(false);
+    // };
 
-    const handleCancel = () => {
-        setIsModalOpen(false);
-    };
+    // const handleCancel = () => {
+    //     setIsModalOpen(false);
+    // };
+
+    console.log(setSelectedEvent);
 
     const loadEventImage = async () => {
         console.log('called');
@@ -63,7 +65,7 @@ const Qrscan = () => {
             <div className="eng-detailsdiv">
                 <Row className="eng-staffmain">
                     <Col span={24} className="eng-titlecontainer">
-                        <span className="eng-profilename">QR</span>
+                        <span className="eng-profilename">QR code</span>
                     </Col>
                     <Col span={24}>
                         <Row>
@@ -75,7 +77,7 @@ const Qrscan = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col span={20} className="eng-middetailcontainer">
+                    {/* <Col span={20} className="eng-middetailcontainer">
                         <Select
                             defaultValue="Select an event"
                             className="eng-select eng-select-event"
@@ -87,18 +89,18 @@ const Qrscan = () => {
                             })}
                             onChange={handleEventChange}
                         />
-                    </Col>
+                    </Col> */}
                     <Col span={24}>
                         <Row className="eng-qrcodecontainer">
                             {eventImage !== undefined && <Image src={qrcode} preview={false} />}
                         </Row>
                     </Col>
-                    <Col span={24} className="eng-viewmoreButton eng-viewmoreButton-unable">
+                    {/* <Col span={24} className="eng-viewmoreButton eng-viewmoreButton-unable">
                         <Button onClick={handleUnable} className="eng-button eng-button-link">
                             Unable to scan
                         </Button>
-                    </Col>
-                    <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={'Submit'}>
+                    </Col> */}
+                    {/* <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText={'Submit'}>
                         <span className="eng-subtitle eng-subtitle-popup">Unable to scan QR</span>
                         <Row style={{ paddingTop: '20px' }}>
                             <Col span={24}>
@@ -118,7 +120,7 @@ const Qrscan = () => {
                                 </Form>
                             </Col>
                         </Row>
-                    </Modal>
+                    </Modal> */}
                 </Row>
             </div>
             <Row>

@@ -1,6 +1,6 @@
 .eng-maindiv {
     height: 100vh;
-    background-color: $background-color;
+    background-color: $white-color;
 }
 
 .eng-detailsdiv {
@@ -82,13 +82,18 @@
 .eng-viewtitle {
     color: $header-color;
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 600;
     font-family: $font-family;
+
+    &-topic {
+        font-size: 20px !important;
+        padding-bottom: 20px;
+    }
 }
 
 .eng-viewspan {
     font-size: 15px;
-    font-weight: 800;
+    color: $background-color;
     font-family: $font-family;
 }
 

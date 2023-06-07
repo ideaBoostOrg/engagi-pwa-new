@@ -2,39 +2,52 @@
     "yesterday": [
       {
         "id": "1",
-        "eventName": "Event 1",
-        "title": "Cloud compting",
-        "eventHost": "Sara hedon",
+        "name": "Event 1",
+        "event_name": "Cloud compting",
+        "host_name": "Sara hedon",
         "venue": "Venue 1",
         "date": "5/23/2023",
-        "time": "10:00 AM"
+        "time": "10:00 AM",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "2",
-        "eventName": "Event 2",
-        "title": "Tools of Information",
-        "eventHost": "Jia khan",
+        "name": "Event 2",
+        "event_name": "Tools of Information",
+        "host_name": "Jia khan",
         "venue": "Venue 2",
         "date": "5/23/2023",
-        "time": "2:30 PM"
+        "time": "2:30 PM",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "3",
-        "eventName": "Event 3",
-        "title": "Web hosting",
-        "eventHost": "Seri perera",
+        "name": "Event 3",
+        "event_name": "Web hosting",
+        "host_name": "Seri perera",
         "venue": "Venue 3",
         "date": "5/23/2023",
-        "time": "6:00 PM"
+        "time": "6:00 PM",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       },
       {
         "id": "4",
         "eventName": "Event 4",
-        "title": "Fulstack development",
-        "eventHost": "Ajith muthuhetti",
+        "event_name": "Fulstack development",
+        "host_name": "Ajith muthuhetti",
         "venue": "Venue 4",
         "date": "5/23/2023",
-        "time": "6:00 PM"
+        "time": "6:00 PM",
+        "name": "Event 9",
+        "image": "qr3",
+        "attendance": 40,
+        "description": "Join us for a vibrant and energetic summer music festival in Central Park! Experience the joy of live music as talented artists from various genres take the stage to entertain you. Dance to the beats, sing along to your favorite songs, and create lasting memories with friends and family. Food stalls, drinks, and a lively atmosphere await you. Don't miss out on this incredible musical extravaganza!"
       }
     ]
   }

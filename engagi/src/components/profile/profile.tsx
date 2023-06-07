@@ -3,7 +3,6 @@ import React, { useCallback } from 'react';
 import Header from '../header/header';
 import Navbar from '../navbar/navbar';
 import user from '../../assets/images/profile.svg';
-import { EditFilled } from '@ant-design/icons';
 
 const Profile = () => {
     const [form] = Form.useForm();
@@ -29,11 +28,6 @@ const Profile = () => {
                                 >
                                     <div style={{ position: 'relative' }}>
                                         <Image src={user} style={{ objectFit: 'cover' }} />
-                                        <div className="eng-buttonedit">
-                                            <Button>
-                                                <EditFilled />
-                                            </Button>
-                                        </div>
                                     </div>
                                 </div>
                             </Row>
@@ -51,7 +45,7 @@ const Profile = () => {
                                                 label="First Name"
                                                 rules={[{ type: 'string', required: true, message: 'Please input your first name here!' }]}
                                             >
-                                                <Input placeholder="Enter First Name" />
+                                                <Input placeholder="Enter First Name" readOnly />
                                             </Form.Item>
                                         </Row>
                                         <Row>
@@ -61,7 +55,7 @@ const Profile = () => {
                                                 label="Last Name"
                                                 rules={[{ type: 'string', required: true, message: 'Please input your last name here!' }]}
                                             >
-                                                <Input placeholder="Enter last name" />
+                                                <Input placeholder="Enter last name" readOnly />
                                             </Form.Item>
                                         </Row>
                                         <Row>
@@ -71,7 +65,7 @@ const Profile = () => {
                                                 label="Contact number"
                                                 rules={[{ type: 'string', required: true, message: 'Please input contact number here!' }]}
                                             >
-                                                <Input placeholder="Enter contact number" />
+                                                <Input placeholder="Enter contact number" readOnly />
                                             </Form.Item>
                                         </Row>
                                         <Row>
@@ -81,7 +75,7 @@ const Profile = () => {
                                                 label="Email"
                                                 rules={[{ type: 'email', required: true, message: 'Please input your email here!' }]}
                                             >
-                                                <Input placeholder="Enter email" className="eng-input" />
+                                                <Input placeholder="Enter email" className="eng-input" readOnly />
                                             </Form.Item>
                                         </Row>
                                         <Row className="eng-editbutton-container">
